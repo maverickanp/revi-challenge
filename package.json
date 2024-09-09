@@ -3,6 +3,11 @@
   "private": false,
   "version": "0.0.1",
   "type": "module",
+  "author": {
+    "name": "Artur Pedrosa",
+    "email": "apedrosa.dev@gmail.com",
+    "url": "https://github.com/maverickanp/revi-challenge"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

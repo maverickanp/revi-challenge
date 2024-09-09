@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# Batalha de Monstros - Aplicação React com TypeScript e Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta é uma aplicação de Batalha de Monstros construída com **React**, **TypeScript**, e **Tailwind CSS**. O objetivo é criar uma interface onde monstros podem ser cadastrados e colocados para lutar entre si, mostrando o resultado da batalha.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Cadastro de monstros com atributos como nome, ataque, defesa, velocidade, HP e imagem.
+- Simulação de batalhas entre dois monstros com base em suas estatísticas.
+- Exibição do resultado da batalha com detalhes sobre o vencedor e perdedor.
 
-## Expanding the ESLint configuration
+## Requisitos
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Node.js** (>= 14.x.x)
+- **npm** ou **yarn**
 
-- Configure the top-level `parserOptions` property like this:
+## Como rodar o projeto localmente
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 1. Clonar o repositório
+
+Primeiro, clone este repositório em sua máquina local:
+
+```bash
+git clone git@github.com:maverickanp/revi-challenge.git
+cd revi-challenge
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Instalar as dependências
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Para instalar as dependências, use um dos seguintes comandos, dependendo de qual gerenciador de pacotes você está utilizando:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+#### npm
+
+```bash
+npm install
+```
+
+#### yarn
+
+```bash
+yarn
+```
+
+### 3. Rodar a aplicação
+
+Após a instalação das dependências, você pode iniciar o servidor de desenvolvimento:
+
+#### com npm
+
+```bash
+npm run dev
+```
+
+#### com yarn
+
+```bash
+yarn dev
+```
+
+### 4. O aplicativo estará disponível no endereço
+
+```bash
+http://localhost:5173
 ```
