@@ -4,7 +4,7 @@ Esta é uma aplicação de Batalha de Monstros construída com **React**, **Type
 
 ## Funcionalidades
 
-- Cadastro de monstros com atributos como nome, ataque, defesa, velocidade, HP e imagem.
+- Cadastro de monstros com atributos como nome, ataque, defesa, velocidade, energia e uma imagem.
 - Simulação de batalhas entre dois monstros com base em suas estatísticas.
 - Exibição do resultado da batalha com detalhes sobre o vencedor e perdedor.
 
@@ -61,3 +61,11 @@ yarn dev
 ```bash
 http://localhost:5173
 ```
+
+### Tecnologias Utilizadas
+
+React - Biblioteca JavaScript para construção de interfaces
+TypeScript - Superconjunto de JavaScript com tipagem estática
+Vite - Ferramenta de build rápida para projetos de frontend
+Tailwind CSS - Framework utilitário para estilização rápida e responsiva
+react-icons - Pacote de ícones para React

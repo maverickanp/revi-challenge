@@ -1,7 +1,7 @@
 import type { BattleResult, BattleRound, Monster } from "./types";
 
 function startbattleRound(previousRound: BattleRound): BattleRound {
-    const current = structuredClone(previousRound);
+    const current = structuredClone(previousRound)
     const [attacker, defender] = [current.defender, current.attacker];
     const defenderDamageReceived = Math.max(1, attacker.attack - defender.defense);
     defender.hp -= defenderDamageReceived;
@@ -26,12 +26,12 @@ export function startBattle(originalAttacker: Monster, originalDefender: Monster
 
     let currentRound: BattleRound;
     const rounds: Array<BattleRound> = [
-        (currentRound = startbattleRound({
+        currentRound = startbattleRound({
             roundNumber: 0,
             attacker: structuredClone(defender),
             defender: structuredClone(attacker),
             defenderDamageReceived: 0,
-        })),
+        })
     ];
 
     while (currentRound.defender.hp > 0) {
@@ -41,6 +41,6 @@ export function startBattle(originalAttacker: Monster, originalDefender: Monster
     return {
         rounds,
         winner: currentRound.attacker,
-        loser: currentRound.defender,
+        loser: currentRound.defender
     };
 }

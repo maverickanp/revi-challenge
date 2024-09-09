@@ -9,7 +9,7 @@ export function BattleResultCard({ battleResult }: BattleResultProps) {
     const { winner, loser, rounds } = battleResult;
     return (
         <>
-            <div className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-10">
+            <div className="bg-gradient-to-r from-blue-600 to-orange-300 text-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto mt-10">
                 <h1 className="flex justify-center text-3xl font-bold text-center mb-6">
                     <FaShieldAlt className="font-bold text-4xl" />
                     {"-"}
@@ -33,7 +33,7 @@ export function BattleResultCard({ battleResult }: BattleResultProps) {
                         </div>
                     </div>
                     <div className="flex justify-between items-center text-3xl font-bold text-yellow-300">
-                        <p className="text-white">Vencedor</p>
+                        <p className="text-white mr-2">Vencedor</p>
                         <FaTrophy />
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export function BattleResultCard({ battleResult }: BattleResultProps) {
                     </div>
                     <div className="text-3xl font-bold text-red-300">
                         <FaSkull />
-                    </div>                    
+                    </div>
                 </div>
 
                 <div className="text-center">
